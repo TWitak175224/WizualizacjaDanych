@@ -1,12 +1,12 @@
-import sys
+import pandas
 
 
 print(sys.version)
 
 
 
-# git config --listcript.
-# git config --global user.name "Name"point.
+# git config --list
+# git config --global user.name "Name"
 
 
 # git config --global user.email "email"
