@@ -1,9 +1,6 @@
 import sys
 
-
 print(sys.version)
-
-
 
 # git config --list
 # git config --global user.name "Name"
@@ -13,4 +10,5 @@ print(sys.version)
 
 text = 'zad 1'
 
-print(text)
+print(text, text, text, sep='\n')
+
