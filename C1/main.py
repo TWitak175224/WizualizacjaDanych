@@ -10,4 +10,4 @@ print(sys.version)
 
 text = 'zad 1'
 
-print(text + '\n' + text)
+print(text + '\n' + text+text)
