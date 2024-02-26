@@ -1,4 +1,4 @@
-import pandas
+import sys
 
 
 print(sys.version)
