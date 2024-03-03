@@ -73,8 +73,26 @@ import sys
 #     print(a, c)
 # else:
 #     print(b, d)
+#
+# for i in range(8):
+#     print(i)
+#
+#
+# lista = [5, 6.6, "asa", 56, 84, "isi", [1, 2, 3]]
+# licznik = 0
+# while licznik < len(lista):
+#     print(lista[licznik])
+#     licznik += 1
+# else:
+#     print("koniec petli")
+#
 
-for i in range(a):
-    print(i)
+lista = [2, 3, 5, 7, 12312, 12345, 6789, 543]
+a = int(input())
+licznik = 0
+while licznik < len(lista):
+    if (a - lista[licznik])!=0:
+        break
+    licznik+= 1
 else:
-    print('koniec petli')
+    print('żadna z listy nie zeruje Twojej liczby')
