@@ -3,10 +3,9 @@ import sys
 print(sys.version)
 
 # git config --list
-# git config --global user.name "Name"
+# git config --global user.name "TWitak175224"
+# git config --global user.email "161207572+TWitak175224@users.noreply.github.com"
 
-
-# git config --global user.email "email"
 
 text = 'zad 1'
 
