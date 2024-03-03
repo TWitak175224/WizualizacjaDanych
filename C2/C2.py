@@ -54,22 +54,27 @@ import sys
 # print(slownik)
 # print(slownik.keys())
 # print(slownik.values())
+#
+# a = 6
+# b = 7
+# if a > b:
+#     print("a is greater than b")
+# elif a == b:
+#     print("a is equal to b")
+# else:
+#     print("b is greater than a")
+#
+# a = int(input())
+# b = int(input())
+# c = int(input())
+# d = int(input())
+#
+# if (a > b) | (c > d):
+#     print(a, c)
+# else:
+#     print(b, d)
 
-a = 6
-b = 7
-if a > b:
-    print("a is greater than b")
-elif a == b:
-    print("a is equal to b")
+for i in range(a):
+    print(i)
 else:
-    print("b is greater than a")
-
-a = int(input())
-b = int(input())
-c = int(input())
-d = int(input())
-
-if (a > b) | (c > d):
-    print(a, c)
-else:
-    print(b, d)
+    print('koniec petli')
