@@ -195,13 +195,13 @@ a = input()
 print(a.count('a'))
 
 # zadanie 2.5
-sys.stdin.write('podaj a')
+sys.stdout.write('podaj a')
 a = int(sys.stdin.buffer.readline())
-sys.stdin.write('podaj b')
+sys.stdout.write('podaj b')
 b = int(sys.stdin.buffer.readline())
-sys.stdin.write('podaj c')
+sys.stdout.write('podaj c')
 c = int(sys.stdin.buffer.readline())
-sys.stdin.write(pow(a, b) + c)
+sys.stdout.write(str(pow(a, b) + c))
 
 # zadanie 2.6
 a, b, c = float(input('podaj a ')), float(input('podaj b ')), float(input('podaj c '))
@@ -224,14 +224,14 @@ for i in range(0, len(lista_float)):
     lista_float[i] = pow(lista_float[i], 2)
 
 # zadanie 2.8
-tablica = []
-for i in range(10):
+tablica, i = [], 0
+while i < 10:
     a = int(input("Enter a number: "))
     if a % 2 == 0:
         tablica.append(a)
 
 print(tablica)
-del tablica, lista_int, lista_float, lista_float, a, b, c
+del tablica, lista_int, lista_float, a, b, c
 
 # zadanie 2.9
 a = int(input("Podaj liczbe: "))
