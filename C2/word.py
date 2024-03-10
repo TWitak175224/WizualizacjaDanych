@@ -1,3 +1,5 @@
+import sys
+
 # zadanie 3.1
 zdanie = input("Podaj zdanie :")
 slowa = zdanie.split(' ')
@@ -42,13 +44,13 @@ else:
 
 # zadanie 3.5
 ile_doskonalych = 0
-for i in range(1,1000):
+for i in range(1, 1000):
     suma_dzielinikow_i = 0
-    for j in range(1,i):
-        if i%j==0:
-            suma_dzielinikow_i +=j
-    if suma_dzielinikow_i==i:
-        ile_doskonalych+=1
+    for j in range(1, i):
+        if i % j == 0:
+            suma_dzielinikow_i += j
+    if suma_dzielinikow_i == i:
+        ile_doskonalych += 1
 print(ile_doskonalych)
 # zadanie 3.6
 lista_int, lista_float = [1, 2, 3, 4, 5], [1.2, 2.3, 3.4, 4.5, 5.6]
@@ -65,19 +67,19 @@ while i < 10:
         tablica.append(a)
 
 print(tablica)
-#zadanie 3.8
-lista =['a','a','a','b','b',1,1,1,2,2,2,3,3,3,'c','c',5,5,5]
+# zadanie 3.8
+lista = ['a', 'a', 'a', 'b', 'b', 1, 1, 1, 2, 2, 2, 3, 3, 3, 'c', 'c', 5, 5, 5]
 slownik = {}
-for i in range(0,len(lista)):
+for i in range(0, len(lista)):
     if lista[i] not in slownik:
-        ile_razy=0
-        for j in range(0,len(lista)):
-            if lista[i]==lista[j]:
-                ile_razy+=1
-        slownik.update({lista[i]:ile_razy})
-list_of_keys=list(slownik.keys())
+        ile_razy = 0
+        for j in range(0, len(lista)):
+            if lista[i] == lista[j]:
+                ile_razy += 1
+        slownik.update({lista[i]: ile_razy})
+list_of_keys = list(slownik.keys())
 print(type(list_of_keys))
-for i in range(0,len(list_of_keys)):
+for i in range(0, len(list_of_keys)):
     try:
         a = float(list_of_keys[i])
     except ValueError:

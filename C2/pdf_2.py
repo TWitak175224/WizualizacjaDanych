@@ -1,3 +1,5 @@
+import sys
+
 # zadanie 2.1
 
 lista = ['szachy', 'siatkowka', 'lekkoatletyka']
@@ -6,7 +8,6 @@ lista.append('boks')
 print(lista)
 
 # zadanie 2.2
-del lista, a, b, c, piosenka, napis, imie, nazwisko
 
 slownik = {'m.in': 'między innnymi', 'pok': 'pokazane', 'np': 'na przykład'}
 
@@ -44,9 +45,11 @@ else:
 # zadanie 2.7
 lista_int, lista_float = [1, 2, 3, 4, 5], [1.2, 2.3, 3.4, 4.5, 5.6]
 for i in range(0, len(lista_int)):
-    lista_int[i] = pow(lista_int[i], 2)
+    lista_int[i] = pow((lista_int[i]), 2)
 for i in range(0, len(lista_float)):
-    lista_float[i] = pow(lista_float[i], 2)
+    lista_float[i] = pow((lista_float[i]), 2)
+
+print(lista_int, lista_float)
 
 # zadanie 2.8
 tablica, i = [], 0

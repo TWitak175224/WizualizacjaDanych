@@ -1,4 +1,4 @@
-#### TUTAJ zaczynają się zadania
+import math
 
 # zadanie 1.1
 a, b = 1, 2
@@ -73,4 +73,3 @@ b = 15.3
 c = 0xabc16
 
 print('string ' + a + ' float ' + str(b) + " hex " + str(c))
-
