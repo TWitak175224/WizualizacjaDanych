@@ -1,4 +1,3 @@
-from math import *
 #
 # # exceptions
 # # python comprehension
@@ -52,6 +51,34 @@ from math import *
 # print(dlugoscodcinka())
 # print(dlugoscodcinka(3, 0, 1, 1))
 
+# #odczytywanie
+# plik = open('plik.txt', 'r', encoding='utf-8')
+# znaki = plik.read(10)
+# linia = plik.readline()
+# linie = plik.readlines()
+# plik.close()
+# print("znaki: ",znaki)
+# print("linia: ",linia)
+# print("reszta: ",linie)
+#
+# #pisanie
+# plik = open('pisanie.txt', 'w')
+# plik.write('aaaaa')
+# plik.close()
+#
+# #pisanie
+# plik = open('pisanie.txt', 'a')
+# plik.write('aaaaa')
+# plik.seek(105)
+# znaki = plik.read(10)
+# linia = plik.readline()
+# linie = plik.readlines()
+# plik.close()
+# print("znaki: ",znaki)
+# print("linia: ",linia)
+# print("reszta: ",linie)
+# plik.close()
 
-plik = open('plik.txt')
-print(plik)
+with open('plik.txt','r') as f:
+    lines = f.readlines()
+print(lines)
